@@ -1,0 +1,58 @@
+.theme(
+  @mainPageBG: #334157,
+  @fColor: #fff,
+  @mainPageBG_hover: #293446
+) {
+    .main-container {
+        .aside {
+            background: @mainPageBG;
+            color: @fColor;
+        }
+
+        .el-menu-vertical-demo {
+            // background: @mainPageBG;
+
+            .el-submenu__title {
+                color: @fColor;
+
+                &:hover {
+                    background-color: @mainPageBG_hover;
+                }
+            }
+            .el-menu--inline {
+                background-color: @mainPageBG;
+
+                .el-menu-item {
+                    color: @fColor;
+
+                    &:focus {
+                        background-color: @mainPageBG_hover;
+                    }
+
+                    &:hover {
+                        background-color: @mainPageBG_hover;
+                    }
+                }
+            }
+        }
+
+        .el-menu-demo {
+            background: @mainPageBG;
+
+            .buttonimg {
+                &:hover {
+                    background-color: @mainPageBG_hover;
+                }
+            }
+
+            .el-submenu {
+                .el-submenu__title {
+                    color: @fColor;
+                    &:hover {
+                        background-color: @mainPageBG_hover;
+                    }
+                }
+            }
+        }
+    }
+}
